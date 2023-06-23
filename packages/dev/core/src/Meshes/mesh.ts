@@ -3105,7 +3105,7 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
             }
         }
 
-        //Update morph targets
+        // Update morph targets
         if (this.morphTargetManager) {
             for (let targetIndex = 0; targetIndex < this.morphTargetManager.numTargets; targetIndex++) {
                 const target = this.morphTargetManager.getTarget(targetIndex);
