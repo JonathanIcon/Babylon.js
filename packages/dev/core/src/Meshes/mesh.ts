@@ -1038,6 +1038,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1075,6 +1078,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1102,6 +1108,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1130,6 +1139,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1504,6 +1516,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1538,6 +1553,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1562,6 +1580,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -1604,6 +1625,9 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
      * - VertexBuffer.UV4Kind
      * - VertexBuffer.UV5Kind
      * - VertexBuffer.UV6Kind
+     * - VertexBuffer.UV7Kind
+     * - VertexBuffer.UV8Kind
+     * - VertexBuffer.UV9Kind
      * - VertexBuffer.ColorKind
      * - VertexBuffer.MatricesIndicesKind
      * - VertexBuffer.MatricesIndicesExtraKind
@@ -4079,6 +4103,18 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
 
             if (parsedMesh.hasUVs6) {
                 mesh._delayInfo.push(VertexBuffer.UV6Kind);
+            }
+
+            if (parsedMesh.hasUVs7) {
+                mesh._delayInfo.push(VertexBuffer.UV7Kind);
+            }
+
+            if (parsedMesh.hasUVs8) {
+                mesh._delayInfo.push(VertexBuffer.UV8Kind);
+            }
+
+            if (parsedMesh.hasUVs9) {
+                mesh._delayInfo.push(VertexBuffer.UV9Kind);
             }
 
             if (parsedMesh.hasColors) {
