@@ -1502,8 +1502,8 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
             offset += subdivisionSize;
         }
 
-        this.synchronizeInstances();
         this.refreshBoundingInfo();
+        this.synchronizeInstances();
     }
 
     /**
