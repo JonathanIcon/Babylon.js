@@ -3058,7 +3058,7 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
         return normals;
     }
 
-    private _convertToUnIndexedMesh(flattenNormals = false, updateIndices = true): Mesh {
+    private _convertToUnIndexedMesh(flattenNormals: boolean = false): Mesh {
         const kinds = this.getVerticesDataKinds();
         const indices = this.getIndices()!;
         const data: { [kind: string]: FloatArray } = {};
@@ -3122,12 +3122,10 @@ export class Mesh extends AbstractMesh implements IGetSetVerticesData {
         }
 
         // Update indices
-        if (updateIndices) {
-            for (let index = 0; index < indices.length; index++) {
-                indices[index] = index;
-            }
-            this.setIndices(indices);
+        for (let index = 0; index < indices.length; index++) {
+            indices[index] = index;
         }
+        this.setIndices(indices);
 
         this._unIndexed = true;
 
